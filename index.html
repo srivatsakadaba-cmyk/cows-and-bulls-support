@@ -1,62 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cows & Bulls Super - Support</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .email {
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cows & Bulls Super — Support, Privacy, Terms</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin-bottom: 6px; }
+    .muted { color: #555; }
+    .card {
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 16px 0;
+      background: #fff;
+    }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-right: 6px;
+      color: #444;
+      background: #fafafa;
+    }
+    a { color: #0a58ca; }
+    ul { margin-top: 8px; }
+    code { background: #f6f8fa; padding: 2px 6px; border-radius: 6px; }
+    hr { border: 0; border-top: 1px solid #eee; margin: 28px 0; }
+    .footer { font-size: 13px; color: #666; margin-top: 30px; }
+  </style>
 </head>
+
 <body>
+  <h1>Cows & Bulls Super</h1>
+  <div class="muted">Support • Privacy Policy • Terms of Service</div>
 
-<h1>Cows & Bulls Super</h1>
+  <div class="card">
+    <span class="pill">Support</span>
+    <h2>Support</h2>
+    <p>
+      If you have questions, issues, or feedback, contact:
+      <br />
+      <strong><a href="mailto:cowsandbullssuper.app@gmail.com">cowsandbullssuper.app@gmail.com</a></strong>
+    </p>
+    <p class="muted">We aim to respond within 48 hours.</p>
+  </div>
 
-<div class="section">
-<h2>Support</h2>
-<p>If you experience any issues or have questions, please contact us:</p>
-<p class="email">cowsandbullssuper.app@gmail.com</p>
-<p>We aim to respond within 48 hours.</p>
-</div>
+  <div class="card">
+    <span class="pill">Privacy</span>
+    <h2>Privacy Policy</h2>
+    <p class="muted"><strong>Last updated:</strong> 2026-02-16</p>
 
-<div class="section">
-<h2>Privacy Policy</h2>
+    <h3>Summary</h3>
+    <ul>
+      <li>We do not collect your email address or phone number.</li>
+      <li>We do not use third-party advertising SDKs.</li>
+      <li>We use Firebase (Firestore + Anonymous Authentication) only to support optional cloud sync and leaderboards.</li>
+      <li>In-app purchases are processed by Apple; purchase infrastructure is handled via RevenueCat.</li>
+    </ul>
 
-<h3>Data Protection</h3>
-<p>Cows & Bulls Super stores gameplay data locally on your device or in your private iCloud storage. We do not store personal data on external servers.</p>
+    <h3>Data We Collect</h3>
+    <p>
+      The app may process the following types of data depending on which features you use:
+    </p>
 
-<h3>Zero Tracking</h3>
-<p>This app does not use third-party tracking, advertising SDKs, or analytics systems that collect personal information.</p>
+    <h4>1) Local gameplay data (on-device)</h4>
+    <ul>
+      <li>Gameplay statistics (e.g., games played, wins, streaks, scores, timings)</li>
+      <li>App settings (e.g., difficulty, haptics/sound preferences)</li>
+    </ul>
+    <p class="muted">
+      This data is stored locally on your device. If iCloud is enabled for the app, Apple may sync some app data via iCloud according to your device settings.
+    </p>
 
-<h3>Information Collection</h3>
-<p>No personally identifiable information (PII) is collected. In-app purchases are securely handled by Apple and RevenueCat using anonymized identifiers.</p>
+    <h4>2) Optional cloud data (Firebase)</h4>
+    <p>
+      If you choose to use cloud features (for example “Sync” or “Hall of Fame/World Rankings”), the app may store:
+    </p>
+    <ul>
+      <li><strong>Anonymous user identifier (UID):</strong> a random ID created by Firebase Anonymous Authentication</li>
+      <li><strong>Leaderboard entry:</strong> your chosen display name and score(s) for the relevant game mode(s)</li>
+      <li><strong>Cloud sync stats:</strong> gameplay statistics used to restore progress across devices (if you use Sync)</li>
+      <li><strong>Timestamps:</strong> used for syncing and conflict resolution</li>
+    </ul>
+    <p class="muted">
+      We do not store your email address in Firebase. Firebase may process device and network information as part of its normal operation.
+    </p>
 
-<h3>External Links</h3>
-<p>The app may provide links to Apple or RevenueCat services. Their privacy policies may differ from ours.</p>
+    <h4>3) Purchases (Apple + RevenueCat)</h4>
+    <ul>
+      <li>Purchases are processed by Apple. We do not receive your payment information.</li>
+      <li>RevenueCat helps validate purchases and may process technical identifiers needed for entitlement verification.</li>
+    </ul>
 
-<h3>Account & Data Deletion</h3>
-<p>All game data is stored locally or in your private iCloud account. To delete your data:</p>
-<ul>
-<li>Delete the app from your device, or</li>
-<li>Disable iCloud storage for the app in iOS Settings.</li>
-</ul>
-<p>If you require assistance, contact us at the email above.</p>
+    <h3>Tracking & Analytics</h3>
+    <p>
+      Cows & Bulls Super does not use third-party trackers or advertising SDKs. We do not sell personal data.
+    </p>
 
-</div>
+    <h3>How Leaderboards Work</h3>
+    <p>
+      Leaderboards are shown only inside the app when you open Hall of Fame/World Rankings. Your leaderboard entry contains:
+      <strong>display name</strong> (what you choose) and <strong>score</strong>.
+    </p>
 
+    <h3>Data Retention</h3>
+    <ul>
+      <li><strong>On-device data:</strong> remains on your device until you delete the app (or clear app data).</li>
+      <li><strong>iCloud-synced app data:</strong> controlled by your iOS/iPadOS iCloud settings.</li>
+      <li><strong>Firebase cloud data:</strong> retained until deleted (see the deletion section below).</li>
+    </ul>
+
+    <h3>Account & Data Deletion</h3>
+    <p>
+      Because the app uses <strong>anonymous authentication</strong>, you may never create a traditional “account” (no email/password required).
+      However, if you used cloud features, an anonymous UID and related cloud data may exist.
+    </p>
+
+    <h4>A) Delete on-device data</h4>
+    <ul>
+      <li>Delete the app from your device to remove local data.</li>
+      <li>If iCloud is enabled for the app, you can disable iCloud for the app in iOS Settings to stop syncing.</li>
+    </ul>
+
+    <h4>B) Delete cloud data (Firebase)</h4>
+    <p>
+      To request deletion of your cloud data, email us at
+      <strong><a href="mailto:cowsandbullssuper.app@gmail.com">cowsandbullssuper.app@gmail.com</a></strong>
+      with the subject line: <code>Delete Cloud Data</code>.
+    </p>
+    <p>
+      Include (if available):
+    </p>
+    <ul>
+      <li>Your in-app display name (the name shown on the leaderboard)</li>
+      <li>Approximate date/time you used Sync or Hall of Fame</li>
+      <li>A screenshot of the Settings screen showing “Connected” (if visible)</li>
+    </ul>
+    <p class="muted">
+      We will delete your leaderboard entries and associated cloud stats tied to your anonymous UID.
+    </p>
+
+    <h3>External Services</h3>
+    <p>
+      The app uses the following service providers:
+    </p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Anonymous Authentication, Firestore)</li>
+      <li><strong>RevenueCat</strong> (purchase entitlement validation)</li>
+      <li><strong>Apple</strong> (App Store payments, device/iCloud features)</li>
+    </ul>
+    <p class="muted">
+      Their privacy practices may differ from ours. Please review their policies if desired.
+    </p>
+
+    <h3>Children’s Privacy</h3>
+    <p>
+      Cows & Bulls Super is not intended to collect personal information from children. We do not knowingly collect personally identifiable information.
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+      For privacy questions, contact:
+      <strong><a href="mailto:cowsandbullssuper.app@gmail.com">cowsandbullssuper.app@gmail.com</a></strong>
+    </p>
+  </div>
+
+  <div class="card">
+    <span class="pill">Terms</span>
+    <h2>Terms of Service</h2>
+    <p class="muted"><strong>Last updated:</strong> 2026-02-16</p>
+
+    <h3>Use of the App</h3>
+    <ul>
+      <li>You may use the app for personal, non-commercial use.</li>
+      <li>You agree not to abuse, disrupt, or attempt to reverse engineer the service or its network features.</li>
+    </ul>
+
+    <h3>Leaderboards</h3>
+    <ul>
+      <li>Leaderboard participation is optional and shown only within the app.</li>
+      <li>We may remove entries that appear to be fraudulent, abusive, or disruptive.</li>
+    </ul>
+
+    <h3>Purchases</h3>
+    <ul>
+      <li>Purchases are handled by Apple. Refund requests are subject to Apple’s policies.</li>
+      <li>The app includes a one-time purchase to unlock “Super Pro Lifetime.”</li>
+    </ul>
+
+    <h3>Disclaimer</h3>
+    <p>
+      The app is provided “as is” without warranties of any kind. We do our best to keep it stable and enjoyable,
+      but we cannot guarantee uninterrupted operation.
+    </p>
+
+    <h3>Changes</h3>
+    <p>
+      We may update these Terms and the Privacy Policy from time to time. Updates will be posted on this page.
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+      Questions about these terms:
+      <strong><a href="mailto:cowsandbullssuper.app@gmail.com">cowsandbullssuper.app@gmail.com</a></strong>
+    </p>
+  </div>
+
+  <div class="footer">
+    © 2026 Cows & Bulls Super. All rights reserved.
+  </div>
 </body>
 </html>
