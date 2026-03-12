@@ -28,7 +28,7 @@
 <li>Gameplay statistics are stored locally on your device.</li>
 <li>If you use the Sync feature, selected data is stored securely in Google Firebase Firestore.</li>
 <li>Leaderboard entries are stored in Google Firebase Firestore and visible inside the app’s Hall of Fame screens. The entries do not include email or other personally identifying information — only display name and score.</li>
-<li>No advertising SDKs, tracking SDKs, or third-party analytics tools are used.</li>
+<li>No advertising SDKs or tracking SDKs are used. We use Firebase Analytics to collect anonymous, aggregated usage data (such as session counts) to help improve the app. No advertising identifiers are collected and no data is sold to third parties.</li>
 </ul>
 
 <h3>4. Account & Data Deletion</h3>
@@ -49,6 +49,9 @@ This action is irreversible.</li>
 <li><strong>Reset Local Statistics:</strong><br>
 Use “Reset All Stats” to clear statistics stored on your device only.</li>
 
+<li><strong>Sign in with Apple:</strong><br>
+Users who sign in with Apple can manage their linked account through Settings. Signing out re-establishes an anonymous identity.</li>
+
 <li><strong>Remove Local Data:</strong><br>
 Deleting the app from your device removes locally stored data.</li>
 </ul>
@@ -64,7 +67,8 @@ If you need assistance with deletion, contact:
 <ul>
 <li>Apple In-App Purchases (for lifetime unlock)</li>
 <li>RevenueCat (purchase validation and entitlement management)</li>
-<li>Google Firebase (anonymous authentication and leaderboard storage)</li>
+<li>Google Firebase (anonymous authentication, Firestore database, and Analytics)</li>
+<li>Sign in with Apple (optional account linking for leaderboard persistence)</li>
 </ul>
 
 These services may process limited anonymized identifiers necessary for functionality. Please refer to their respective privacy policies for additional information.</p>
@@ -96,4 +100,4 @@ These services may process limited anonymized identifiers necessary for function
 
 <hr>
 
-<p>Last Updated: February 2026</p>
+<p>Last Updated: March 2026</p>
